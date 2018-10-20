@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Product Landing Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <nav id="nav-bar">
+                <ul>
+                    <li><img id="header-img" src="images/guitar-icon.png" alt="guitar-icon"></li>
+                    <li><a id="logo">SHRED</a></li>
+                    <li><a class="nav-link" href="#intro">Intro</a></li>
+                    <li><a class="nav-link" href="#models">Models</a></li>
+                    <li><a class="nav-link" href="#demo">Demo</a></li>
+                    <li><a class="nav-link" href="#signup">Signup</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 id="intro">Introduction</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut lectus interdum, bibendum eros et, posuere diam. Morbi volutpat lorem eu iaculis eleifend. Aenean varius pretium arcu, ac gravida erat posuere congue. Maecenas viverra sodales lacinia. Vivamus eget massa enim. Quisque euismod lectus nec nisl bibendum, ac venenatis massa vulputate. Mauris a lacus ut sem aliquam accumsan. Maecenas vulputate dui eget lectus rutrum, sit amet faucibus nulla iaculis. Praesent varius velit sed porta rutrum. Proin imperdiet mi arcu, a dapibus nisi euismod eget. Quisque vitae purus et ligula ultrices semper. Integer sit amet nulla quam.</p>
+            <h2 id="models">Models</h2>
+            <p>Cras est neque, tristique vel pretium et, elementum in arcu. Suspendisse potenti. Vivamus viverra accumsan eros a aliquam. Suspendisse potenti. Nam tincidunt auctor nunc, vitae viverra ipsum interdum et. Nulla sed nisl ut enim aliquam suscipit. Vestibulum nisi velit, eleifend vitae tincidunt pretium, convallis sit amet nunc.</p>
+            <div id="imageGroup">
+                <div class="image">
+                    <img class="mainImage" src="images/fender-deluxe-nashville-telecaster.jpg" alt="fender deluxe nashville telecaster">
+                    <div class="imageCaption">Fender Deluxe Nashville Telecaster</div>
+                </div>
+                <div class="image">
+                    <img class="mainImage" src="images/gibson-2017-les-paul-standard.jpg" alt="gibson 2017 les paul standard">
+                    <div class="imageCaption">Gibson 2017 Les Paul Standard</div>
+                </div>
+                <div class="image">
+                    <img class="mainImage" src="images/ibanez-GRG120BDX.jpg" alt="ibanez GRG120BDX">
+                    <div class="imageCaption">Ibanez GRG120BDX</div>
+                </div>
+            </div>
+            <h2 id="demo">Demonstration</h2>
+            <p>Mauris rhoncus purus eget est volutpat, vitae scelerisque metus pulvinar. Maecenas a odio convallis, accumsan lectus vel, malesuada lacus. In convallis eu massa in suscipit. Duis rhoncus lectus nibh, at sollicitudin nunc ultrices vestibulum. Vestibulum sed nisl ipsum. Aliquam sagittis neque orci, vel euismod lacus pharetra ut. Duis porttitor tempor finibus.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/nuTthSAQZn8"></iframe>
+            <h2 id="signup">Signup For Free Email Newsletter</h2>
+            <p>Suspendisse vel ligula quis lorem hendrerit porta. Praesent venenatis ornare purus, laoreet efficitur diam ultrices sit amet. Cras et lobortis purus. Integer convallis lorem ex, nec hendrerit mauris lacinia dictum.</p>
+            <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit" onsubmit="handleSubmit(event)">
+                <input id="email" type="email" name="email" placeholder="Enter your email address">
+                <input id="submit" type="submit" value="Signup!">
+            </form>
+        </main>
+        <footer>
+            &copy; Simon Cooper 2018
+        </footer>
+        <script>
+            const handleSubmit = (e) => { e.preventDefault(); }
+        </script>
+        <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    </body>
+</html>

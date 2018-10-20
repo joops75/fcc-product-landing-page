@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'True Lies';
+    src: url('/fonts/True Lies.ttf') format('truetype');
+}
+
+body {
+    background: linear-gradient(135deg,  rgb(211, 231, 248), rgb(102, 172, 229));
+    margin: auto;
+    font-family: 'Batang', Arial;
+}
+
+main {
+    margin: 0 3px;
+}
+
+ul {
+    list-style-type: none;
+    background: linear-gradient(90deg, rgb(110, 110, 110), rgb(153, 153, 153));
+    position: absolute;
+    top: 0;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding: 25px 15px;
+}
+
+a.nav-link:hover {
+    background: rgb(92, 92, 92);
+}
+
+#header-img {
+    height: 50px;
+    float: left;
+    padding: 10px;
+}
+
+#logo {
+    float: left;
+    cursor: default;
+    font-family: 'True Lies';
+    font-size: 20px;
+    padding: 25px 15px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+    
+h2#intro {
+    margin-top: 210px;
+}
+
+
+p {
+    text-align: justify;
+}
+
+#imageGroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mainImage {
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+}
+
+.imageCaption {
+    width: 200px;
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+
+iframe {
+    display: block;
+    width: 170px;
+    height: 95px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#email {
+    width: 200px;
+}
+
+input {
+    font-family: 'Batang', Arial;
+    padding-top: 2px;
+    margin: 0 15px;
+}
+
+footer {
+    height: 70px;
+    line-height: 70px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+@media (min-width: 253px) {
+
+    main {
+        margin: 0 10px;
+    }
+    
+    nav {
+        position: fixed; /*only required to pass fcc tests */
+        top: 0; /*only required to pass fcc tests */
+    }
+    
+    ul {
+        position: fixed;
+    }
+  
+    h2#intro {
+        margin-top: 140px;
+    }
+
+    h2::before {
+        display: block;
+        content: " ";
+        margin-top: -140px;
+        height: 140px;
+        visibility: hidden;
+        pointer-events: none;
+    }
+      
+    iframe {
+        width: 200px;
+        height: 113px;
+    }
+    
+}
+
+@media (min-width: 525px) {
+
+    main {
+        margin: 0 10%;
+    }
+    
+    h2#intro {
+        margin-top: 70px;
+    }
+    
+    h2::before {
+        margin-top: -70px;
+        height: 70px;
+    }
+    
+    iframe {
+        width: 400px;
+        height: 225px;
+    }
+    
+}
